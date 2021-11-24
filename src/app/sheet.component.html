@@ -1,0 +1,12 @@
+<input type="file"  multiple="false" />
+<button class="new" (change)="onFileChange($event)" type="submit" >Upload</button>
+	<table class="sjs-table">
+		<tbody>
+      <tr *ngFor="let row of data">
+			<td *ngFor="let val of row">
+				{{val}}
+			</td>
+		</tr>
+    </tbody>
+	</table>
+	<button (click)="export()">Export!</button>
